@@ -31,8 +31,8 @@ public:
     QHBoxLayout *horizontalLayout;
     QPushButton *bar_2;
     QVBoxLayout *verticalLayout;
-    QPushButton *bar_0;
-    QPushButton *bar_1;
+    QPushButton *bar_1_1;
+    QPushButton *bar_1_2;
     QPushButton *bar_3;
     QPushButton *bar_5;
 
@@ -82,24 +82,24 @@ public:
         verticalLayout = new QVBoxLayout();
         verticalLayout->setSpacing(5);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        bar_0 = new QPushButton(centralWidget);
-        bar_0->setObjectName(QStringLiteral("bar_0"));
-        sizePolicy1.setHeightForWidth(bar_0->sizePolicy().hasHeightForWidth());
-        bar_0->setSizePolicy(sizePolicy1);
-        bar_0->setFocusPolicy(Qt::WheelFocus);
-        bar_0->setStyleSheet(QLatin1String("background-color: rgba(255, 255, 255, 200);\n"
+        bar_1_1 = new QPushButton(centralWidget);
+        bar_1_1->setObjectName(QStringLiteral("bar_1_1"));
+        sizePolicy1.setHeightForWidth(bar_1_1->sizePolicy().hasHeightForWidth());
+        bar_1_1->setSizePolicy(sizePolicy1);
+        bar_1_1->setFocusPolicy(Qt::WheelFocus);
+        bar_1_1->setStyleSheet(QLatin1String("background-color: rgba(255, 255, 255, 200);\n"
 "border:none;"));
 
-        verticalLayout->addWidget(bar_0);
+        verticalLayout->addWidget(bar_1_1);
 
-        bar_1 = new QPushButton(centralWidget);
-        bar_1->setObjectName(QStringLiteral("bar_1"));
-        sizePolicy1.setHeightForWidth(bar_1->sizePolicy().hasHeightForWidth());
-        bar_1->setSizePolicy(sizePolicy1);
-        bar_1->setStyleSheet(QLatin1String("background-color: rgba(0, 0, 255, 200);\n"
+        bar_1_2 = new QPushButton(centralWidget);
+        bar_1_2->setObjectName(QStringLiteral("bar_1_2"));
+        sizePolicy1.setHeightForWidth(bar_1_2->sizePolicy().hasHeightForWidth());
+        bar_1_2->setSizePolicy(sizePolicy1);
+        bar_1_2->setStyleSheet(QLatin1String("background-color: rgba(0, 0, 255, 200);\n"
 "border:none;"));
 
-        verticalLayout->addWidget(bar_1);
+        verticalLayout->addWidget(bar_1_2);
 
 
         horizontalLayout->addLayout(verticalLayout);
@@ -147,8 +147,8 @@ public:
     {
         ClockClass->setWindowTitle(QApplication::translate("ClockClass", "Clock", Q_NULLPTR));
         bar_2->setText(QString());
-        bar_0->setText(QString());
-        bar_1->setText(QString());
+        bar_1_1->setText(QString());
+        bar_1_2->setText(QString());
         bar_3->setText(QString());
         bar_5->setText(QString());
     } // retranslateUi

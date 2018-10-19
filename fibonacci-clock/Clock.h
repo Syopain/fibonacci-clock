@@ -2,6 +2,8 @@
 #define CLOCK_H
 
 #include <QtWidgets/QMainWindow>
+#include <QString>
+#include <QTimer>
 #include "ui_Clock.h"
 
 class Clock : public QMainWindow
@@ -14,6 +16,11 @@ public:
 
 private:
 	Ui::ClockClass ui;
+	QTimer *timer;
+
+private slots:
+	void refresh();
+	void next();
 };
 
 #endif // CLOCK_H

@@ -94,7 +94,7 @@ border:none;</string>
            <number>5</number>
           </property>
           <item>
-           <widget class="QPushButton" name="bar_0">
+           <widget class="QPushButton" name="bar_1_1">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
               <horstretch>0</horstretch>
@@ -114,7 +114,7 @@ border:none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="bar_1">
+           <widget class="QPushButton" name="bar_1_2">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
               <horstretch>0</horstretch>
